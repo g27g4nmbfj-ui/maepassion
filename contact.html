@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — MAE PASSION</title>
+  <meta name="description" content="Neem contact op met MAE PASSION voor flexibele ondersteuning, vaste uren of maatwerk.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
-    <a class="logo" href="index.html">MAE PASSION</a>
+    <a class="logo" href="index.html">Mae Passion</a>
     <nav>
       <a href="index.html">Home</a>
       <a href="diensten.html">Diensten</a>
@@ -19,31 +20,44 @@
   </header>
 
   <main>
-    <h1>Contact</h1>
-    <p>Neem contact op via het formulier of mail direct naar <a href="mailto:info@maepassion.nl">info@maepassion.nl</a>.</p>
+    <section class="contact-section wrap">
+      <p class="tag">Contact</p>
+      <h1>Let's work together 🤍</h1>
+      <p style="max-width:560px; margin:0 auto;">Heb jij taken die steeds onderaan je to-do lijst belanden? Of kun je gewoon wel wat extra handen gebruiken?</p>
+      <p style="max-width:560px; margin:0.5rem auto 0;">Laten we kennismaken. Ik denk graag met je mee over wat ik voor jou en je bedrijf kan betekenen.</p>
 
-    <form id="contact-form" method="POST" action="/api/contact">
-      <div>
-        <label for="name">Naam</label>
-        <input type="text" id="name" name="name" required>
+      <div class="contact-links">
+        <a href="mailto:marinka@maepassion.nl">📧 marinka@maepassion.nl</a>
+        <a href="https://www.instagram.com/thuismama_eenhandvol" target="_blank" rel="noopener">📱 @thuismama_eenhandvol</a>
+        <a href="https://www.linkedin.com/search/results/all/?keywords=Marinka%20B%C3%A9nit" target="_blank" rel="noopener">💼 LinkedIn: Marinka Bénit</a>
       </div>
-      <div>
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div>
-        <label for="message">Bericht</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-      </div>
-      <button type="submit">Versturen</button>
-      <p id="form-status" role="status"></p>
-    </form>
+
+      <form id="contact-form" method="POST" action="/api/contact">
+        <div>
+          <label for="name">Naam</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Bericht</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Versturen</button>
+        <p id="form-status" role="status"></p>
+      </form>
+
+      <p class="note">Beschikbaar voor flexibele ondersteuning, vaste uren en maatwerk. Alle tarieven zijn exclusief 21% btw.</p>
+    </section>
   </main>
 
   <footer>
-    &copy; 2026 MAE PASSION — info@maepassion.nl
+    &copy; 2026 MAE PASSION — Marinka Bénit — marinka@maepassion.nl
   </footer>
 
   <script src="js/contact.js"></script>
+  <script src="js/notice.js"></script>
 </body>
 </html>

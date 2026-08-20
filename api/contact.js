@@ -1,7 +1,7 @@
-// Vercel serverless function: ontvangt het contactformulier en mailt het door naar info@maepassion.nl.
+// Vercel serverless function: ontvangt het contactformulier en mailt het door naar marinka@maepassion.nl.
 // TODO: e-mailverzending nog aan te sluiten op een provider (bijv. Resend, of SMTP via TransIP).
 // Benodigde env vars in Vercel-project instellen, bijv.:
-//   EMAIL_TO=info@maepassion.nl
+//   EMAIL_TO=marinka@maepassion.nl
 //   RESEND_API_KEY=... (of SMTP_HOST/SMTP_USER/SMTP_PASS)
 
 export default async function handler(req, res) {
