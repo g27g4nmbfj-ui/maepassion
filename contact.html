@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — MAE PASSION</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">MAE PASSION</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="diensten.html">Diensten</a>
+      <a href="over-mij.html">Over mij</a>
+      <a href="tarieven.html">Tarieven</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact</h1>
+    <p>Neem contact op via het formulier of mail direct naar <a href="mailto:info@maepassion.nl">info@maepassion.nl</a>.</p>
+
+    <form id="contact-form" method="POST" action="/api/contact">
+      <div>
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Bericht</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit">Versturen</button>
+      <p id="form-status" role="status"></p>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2026 MAE PASSION — info@maepassion.nl
+  </footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>
