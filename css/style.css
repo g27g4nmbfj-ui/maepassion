@@ -202,7 +202,18 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
 .section-dark {
   background: linear-gradient(160deg, var(--mauve-mid), var(--mauve-dark));
   color: var(--white);
-  padding: 4rem 0;
+  padding: 3rem 0;
+  border-radius: 28px;
+  margin: 2rem 1rem;
+}
+
+@media (min-width: 900px) {
+  .section-dark {
+    padding: 4rem 0;
+    border-radius: 40px;
+    max-width: calc(var(--max-width) + 4rem);
+    margin: 2.5rem auto;
+  }
 }
 
 .section-dark h2, .section-dark h3 { color: var(--white); }
@@ -405,9 +416,16 @@ form {
   text-align: left;
 }
 
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
 label { font-weight: 700; color: var(--brown-deep); }
 
 input, textarea {
+  width: 100%;
   padding: 0.7rem 0.9rem;
   border: 1px solid var(--mauve-soft);
   border-radius: 10px;
