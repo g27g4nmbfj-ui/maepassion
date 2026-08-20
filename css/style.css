@@ -140,7 +140,7 @@ h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
   border-radius: 260px 260px 24px 24px;
   overflow: hidden;
   box-shadow: 0 20px 50px -20px rgba(90, 65, 45, 0.35);
-  aspect-ratio: 1378 / 1881;
+  aspect-ratio: 1680 / 2187;
   background: var(--cream-alt);
   max-width: 440px;
   margin: 0 auto;
